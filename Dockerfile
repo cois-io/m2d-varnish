@@ -1,5 +1,6 @@
 FROM debian:jessie
-MAINTAINER Fabrizio Balliano <fabrizio@fabrizioballiano.com>
+
+MAINTAINER Francois Raubenheimer <cois.io>
 
 RUN apt-get update && apt-get install -y varnish && apt-get clean
 ADD ./start.sh /start.sh
